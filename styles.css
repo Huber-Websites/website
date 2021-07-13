@@ -8,6 +8,7 @@
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
+  background: #111;
 }
 
 /* ----------------------------------------- */
@@ -88,7 +89,7 @@ html {
   max-width: 100%;
   height: 30rem;
   position: absolute;
-  top: 1000px;
+  top: -1000px;
   opacity: 0;
   font-size: 2rem;
   transition: all 0.5s ease;
@@ -143,9 +144,12 @@ html {
 /* ----------------------------------------- */
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: #111;
   background: linear-gradient(to right, #111, #181818);
-  padding: 20rem 0;
+  height: 90vh;
 }
 
 .hero__container {
@@ -174,6 +178,72 @@ html {
   background: linear-gradient(to right, #9114ff, #da22ff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
+}
+
+.hero__btn {
+  font-size: 2rem;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 2rem 6rem;
+  border: none;
+  border-radius: 0.4rem;
+  margin-top: 2.4rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+  outline: none;
+  text-decoration: none;
+}
+
+.hero__btn p {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff1ead;
+  transition: all 0.2s;
+  border-radius: 0.4rem;
+}
+
+.hero__btn:hover {
+  color: #fff;
+}
+
+.hero__btn:hover:after {
+  width: 100%;
+}
+
+@media screen and (max-width: 1300px) {
+  .hero__heading {
+    font-size: 10rem;
+  }
+
+  .hero__description {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero__heading {
+    font-size: 4rem;
+  }
+
+  .hero__description {
+    font-size: 2rem;
+  }
+
+  .hero__btn {
+    padding: 1rem 4rem;
+  }
 }
 
 /* @media screen and (max-width: 768px) {
