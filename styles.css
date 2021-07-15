@@ -1,3 +1,16 @@
+/* ----------------------------------------- */
+/* Main Colors Reference */
+/* ----------------------------------------- */
+
+.colors {
+  background: #f9e1cf;
+  background: #f3c5a2;
+  background: #f6d945;
+  background: #f4cf14;
+  background: #2a1443;
+  background: #fffdfc;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
