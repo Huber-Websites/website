@@ -527,6 +527,7 @@ html {
   background: linear-gradient(40deg, #2657eb, #de6161);
   transition: all 0.2s ease-in;
   text-decoration: none;
+  user-select: none;
 }
 
 .services__card:nth-child(2) {
