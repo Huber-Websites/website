@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Favicon -->
+    <!-- Favicon and Title -->
     <link rel="shortcut icon" type="image/png" href="/assets/logo.png" />
     <title>Huber Websites</title>
 
@@ -21,8 +21,13 @@
   <body>
     <!-- Navbar Section -->
     <nav class="navbar">
-      <div class="navbar__column" id="navbar__contact">
-        <button>Get in Contact</button>
+      <div class="navbar__column">
+        <a
+          id="navbar__contact"
+          href="mailto:mike.huber@huberwebsites.com?subject=Website Contact"
+        >
+          <p>Contact</p>
+        </a>
       </div>
 
       <div class="navbar__column">
@@ -31,6 +36,7 @@
         </a>
       </div>
 
+      <!-- Hamburger Menu -->
       <div class="navbar__column">
         <div id="mobile-menu">
           <span class="bar"></span>
@@ -39,7 +45,7 @@
         </div>
       </div>
 
-      <!-- Hidden menu until hamburger is clicked -->
+      <!-- Hidden until hamburger is clicked -->
       <ul class="navbar__menu">
         <li class="navbar__item">
           <a href="#home" class="navbar__links" id="home-page">Home</a>
@@ -56,7 +62,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <div class="hero" id="home">
+    <section class="hero" id="home">
       <div class="hero__container">
         <h1 class="hero__heading">Huber Websites</h1>
         <p class="hero__description">Design, Hosting, Creation</p>
@@ -66,59 +72,78 @@
           <p>Explore</p>
         </a>
       </div>
-    </div>
+    </section>
 
     <!-- About Section -->
-    <!-- <div class="main" id="about">
-      <div class="main__container">
-        <div class="main__img--container">
-          <div class="main__img--card">
-            <i class="fas fa-layer-group"></i>
+    <section class="about" id="about">
+      <div class="about__container">
+        <div class="about__img--card">
+          <i class="fas fa-layer-group"></i>
+        </div>
+
+        <div class="about__content">
+          <h2 class="about__content--heading">What do we do?</h2>
+          <p class="about__content--description">
+            We build, host, and maintain custom websites
+          </p>
+          <div class="about__btn--container">
+            <a
+              href="mailto:mike.huber@huberwebsites.com?subject=Website Contact"
+              class="about__btn"
+            >
+              <p>Get in Contact</p>
+            </a>
           </div>
         </div>
-        <div class="main__content">
-          <h2>What do we do?</h2>
-          <h3>We help businesses scale</h3>
-          <p>Schedule a call to learn more about our services</p>
-          <button class="main__btn"><a href="#">Schedule Call</a></button>
-        </div>
       </div>
-    </div> -->
+    </section>
 
     <!-- Services Section -->
-    <!-- <div class="services" id="services">
-      <h2>Our Services</h2>
+    <section class="services" id="services">
+      <h2 class="services__heading">Our Services</h2>
       <div class="services__wrapper">
-        <div class="services__card">
-          <h3>Custom Colorways</h3>
-          <p>AI powered technology</p>
-          <div class="services__btn">
-            <button>Get Started</button>
+        <a href="https://wordpress.com/" target="_blank" class="services__card">
+          <h3 class="services__card--heading">WordPress</h3>
+          <p class="services__card--description">
+            Custom, mobile-responsive WordPress website
+          </p>
+          <div class="services__btn--container">
+            <button class="services__btn">Learn More</button>
           </div>
-        </div>
-        <div class="services__card">
-          <h3>Are you ready?</h3>
-          <p>Take the leap</p>
-          <div class="services__btn">
-            <button>Get Started</button>
+        </a>
+        <a href="https://kinsta.com/" target="_blank" class="services__card">
+          <h3 class="services__card--heading">Kinsta</h3>
+          <p class="services__card--description">
+            Hosted on the #1 WordPress hosting platform
+          </p>
+          <div class="services__btn--container">
+            <button class="services__btn">Learn More</button>
           </div>
-        </div>
-        <div class="services__card">
-          <h3>Full Gradients</h3>
-          <p>100 Combinations</p>
-          <div class="services__btn">
-            <button>Get Started</button>
+        </a>
+        <a href="https://elementor.com/" target="_blank" class="services__card">
+          <h3 class="services__card--heading">Elementor</h3>
+          <p class="services__card--description">
+            Take control with this simple page builder
+          </p>
+          <div class="services__btn--container">
+            <button class="services__btn">Learn More</button>
           </div>
-        </div>
-        <div class="services__card">
-          <h3>Infinite Choices</h3>
-          <p>1000's of colors</p>
-          <div class="services__btn">
-            <button>Get Started</button>
+        </a>
+        <a
+          href="https://onepagelove.com/inspiration"
+          target="_blank"
+          class="services__card"
+        >
+          <h3 class="services__card--heading">Modern Design</h3>
+          <p class="services__card--description">
+            Stay up to date with beautiful modern designs
+          </p>
+          <div class="services__btn--container">
+            <button class="services__btn">Learn More</button>
           </div>
-        </div>
+        </a>
       </div>
-    </div> -->
+    </section>
 
     <!-- Features Section -->
     <!-- <div class="main" id="sign-up">

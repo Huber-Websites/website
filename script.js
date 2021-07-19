@@ -28,17 +28,21 @@ const highlightMenu = () => {
   const servicesMenu = document.querySelector("#services-page");
   let scrollPos = window.scrollY;
 
+  const aboutPos = 600;
+  const servicesPos = 1400;
+  const featuresPos = 2345;
+
   // Add the 'highlight' class to menu items
-  if (window.innerWidth > 960 && scrollPos < 600) {
+  if (window.innerWidth > 960 && scrollPos < aboutPos) {
     homeMenu.classList.add("highlight");
     aboutMenu.classList.remove("highlight");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 1400) {
+  } else if (window.innerWidth > 960 && scrollPos < servicesPos) {
     aboutMenu.classList.add("highlight");
     homeMenu.classList.remove("highlight");
     servicesMenu.classList.remove("highlight");
     return;
-  } else if (window.innerWidth > 960 && scrollPos < 2345) {
+  } else if (window.innerWidth > 960 && scrollPos < featuresPos) {
     servicesMenu.classList.add("highlight");
     aboutMenu.classList.remove("highlight");
     return;
